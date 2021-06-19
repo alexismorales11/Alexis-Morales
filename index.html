@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +12,113 @@
 </head>
 <body>
     <header>
-        <div class="wrapper">
-			<div class="logo">Alexis Morales</div>
+        <div class="container">
+			<div class="logo"><a target="_blank" href="https://www.instagram.com/alexis_morales_11/"> Alexis Morales</a></div>
 			<nav>
-				<a href="#">Inicio</a>
-				<a href="#">Servicios</a>
-				<a href="#">Proyectos</a>
-				<a href="#">Contacto</a>
+				<a href="#home">Home</a>
+                <a href="#proyectos">Proyectos</a>
+				<a href="#biografia">Biografia</a>
+				<a href="#contacto">Contacto</a>
 			</nav>
 		</div>
     </header>
-    <main></main>
+
+    <main>
+        <section id="home">
+            <div class="home-descripcion">
+                <div class="home-descripcion-container">
+                    <h1>Web developer, estudiante de ingeniería de sistemas</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="proyectos">
+            <div class="proyectos-container-titulo">
+                <h1 class="proyectos-titulo">Últimos proyectos</h1>
+            </div>
+        <div class="proyectos-sec">
+            <div class="proyectos-container">
+                <div class="proyectos-container-google_clone">
+                   <a target="_blank" href="https://alexismorales11.github.io/google-clone/"><img src="./multimedia/maquetacion-google-clone.png" alt="Google-Clone"></a> 
+                    <h1><a target="_blank" href="https://alexismorales11.github.io/google-clone/">Google-Clone</a></h1>
+                    <p>Clonación de buscador de google.</p>
+                </div>
+            </div>
+            <div class="proyectos-container">
+                <div class="proyectos-container-video_platform">
+                   <a target="_blank" href="https://alexismorales11.github.io/video-platform/"><img src="./multimedia/maquetacion-video-platform.png" alt="Video-Platform"></a> 
+                    <h1><a target="_blank" href="https://alexismorales11.github.io/video-platform/">Video-Platform</a></h1>
+                    <p>Maquetacion de plataforma de streaming</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyectos-sec">
+            <div class="proyectos-container">
+                <div class="proyectos-container-registros_acedemicos">
+                   <a target="_blank" href="https://github.com/alexismorales11/sistema_de_registros_academicos.git"><img src="./multimedia/registro-academico.PNG" alt="Google-Clone"></a> 
+                    <h1><a target="_blank" href="https://github.com/alexismorales11/sistema_de_registros_academicos.git">Sistema institucional</a></h1>
+                    <p>Sistema de administración registros académicos, desarrollado con C# .Net</p>
+                </div>
+            </div>
+            <div class="proyectos-container">
+                <div class="proyectos-container-video_platform">
+                   <a target="_blank" href="https://github.com/alexismorales11/hanoi.git"><img src="./multimedia/hanoi.png" alt="Video-Platform"></a> 
+                    <h1><a target="_blank" href="https://github.com/alexismorales11/hanoi.git">Torres de hanoi</a></h1>
+                    <p>Rompecabezas o juego matemático inventado en 1883 por el matemático francés Édouard Lucas.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        
+        <section id="biografia">
+            <div class="biografia-container-titulo">
+                <h1 class="biografia-titulo">¿Quién es Alexis Morales?</h1>
+            </div>
+            <div class="biografia-foto_perfil">
+                <img src="./multimedia/foto-perfil.jpeg" alt="Foto-Perfil">
+            </div>
+            <div class="biografia-memes_descripcion">
+                <p><a target="_blank" href="https://twitter.com/ale_morales_11">Selvin Alexis Soc Morales </a>nació el 02 de diciembre del año 2000 en un pueblito llamado Barberena en Guatemala, Santa Rosa. Ama escribir codigo y solucionar problemas a través de software.</p>
+                <p>Actualmente es estudiante de ingeniería de sistemas en la Universidad Mariano Gálvez de Guatemala.</p>
+                <p>También es estudiante de la comunidad más grande de educación en línea latinoamericana <a target="_blank" href="https://platzi.com">(Platzi).</a></p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contacto-container-titulo">
+                <h1>Contactar</h1>
+            </div>
+            <div class="contacto-container" >
+                <div class="contacto-container-items">
+                    <img src="./multimedia/linkedin.png" alt="Linkedin">
+                    <h1>Linkedin</h1>
+                </div>
+                <div class="contacto-container-items">
+                    <img src="./multimedia/github.png" alt="Linkedin">
+                    <h1>Github</h1>
+                </div>
+                <div class="contacto-container-items">          
+                    <img src="./multimedia/email.png" alt="Linkedin">
+                    <h1>E-mail</h1>
+                </div>
+                <div class="contacto-container-items">
+                    <img src="./multimedia/twitter.jpg" alt="Linkedin">
+                    <h1>Twitter</h1>
+                </div>          
+                <div class="contacto-container-items">      
+                    <img src="./multimedia/facebook.png" alt="Linkedin">
+                    <h1>Facebook</h1>
+                </div>      
+                <div class="contacto-container-items">          
+                    <img src="./multimedia/instatgram.jpg" alt="Linkedin">
+                    <h1>instagram</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer></footer>
 </body>
 </html>

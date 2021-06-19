@@ -1,11 +1,14 @@
+*{
+	margin: 0;
+	font-weight:bold;
+}
 header {
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
 	overflow:hidden; /* Eliminamos errores de float */
 	background:#000;
-	margin-bottom:20px;
-}
 
-.wrapper {
+}
+.container {
 	width:90%; /* Establecemos que el ancho sera del 90% */
 	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
 	margin:auto; /* Centramos los elementos */
@@ -20,6 +23,7 @@ header .logo {
 	font-size:50px;
 	line-height:100px;
 	float:left;
+	font-weight:bold;
 }
 header nav a {
 	display:inline-block;
@@ -33,8 +37,160 @@ header nav a {
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
 }
+header .container .logo a{
+    text-decoration: none;
+    color: #fff;
+}
 
 header nav a:hover {
-	background:#f56f3a;
+	background:#686767;
 	border-radius:50px;
+}
+main {
+	width: 100%;
+	position: absolute;
+}
+main #home{
+	background-color: #000;
+	color: #fff;
+	width: 100%;
+	margin: 0 auto;
+}
+main #home .home-descripcion{
+	padding: 100px 0;
+	text-align: center;
+}
+main #home .home-descripcion-container{
+	width: 50%;
+	margin: auto;
+}
+main #home .home-descripcion h1{
+	font-size: 40px;
+	font-family: monospace;
+}	
+
+main #proyectos{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 0 0;
+}
+main #proyectos .proyectos-container-titulo{
+	width: 70%;
+	background-color: red;
+	margin: 10px auto;
+	border-radius: 20px;
+	padding: 15px;
+}
+main #proyectos .proyectos-titulo{
+	font-weight:bold;
+	font-size: 50px;
+}
+
+main #proyectos .proyectos-sec{
+	display: flex;
+	justify-content: center;
+}
+main #proyectos .proyectos-container{
+	padding: 15px;
+	margin: 15px;
+	border: 10px solid #000;
+	border-radius: 20px;
+}
+main #proyectos .proyectos-container img{
+	width: 100%;
+	height: 100%;
+}
+main #proyectos .proyectos-sec .proyectos-container a{
+	text-decoration: none;
+	color: #000;
+}
+main #proyectos .proyectos-sec .proyectos-container p{
+	margin: 0 20%;
+	color: #000;
+}
+
+
+main #biografia{
+	width: 70%;
+	margin:0 auto;
+	text-align: center;
+}
+main #biografia .biografia-container-titulo{
+	width: 70%;
+	margin: 20px auto 0;
+	padding: 70px 0 50px;
+}
+main #biografia .biografia-titulo{
+	font-size: 60px;
+	font-weight:bold;
+}
+
+main #biografia .biografia-foto_perfil{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+main #biografia div img {
+	width: 300px;
+	height: 300px;
+	border: 1px solid rgb(185, 177, 177);
+	border-radius: 50%;
+}
+main #biografia .biografia-memes_descripcion{
+	margin: auto 20%;
+}
+main #biografia .biografia-memes_descripcion p{
+	line-height: 200%;
+	text-align: justify;
+	font-size: 20px;
+	font-family: "Latin Modern Roman 10";
+	font-style: oblique;
+	font-weight: normal;
+}
+main #biografia a{
+	text-decoration: none;
+	color: #000;
+}
+
+main #contacto{
+	width: 70%;
+	margin:0 auto;
+	text-align: center;
+}
+main #contacto .contacto-container-titulo{
+	width: 70%;
+	margin: 20px auto 0;
+	padding: 70px 0 50px;
+}
+main #contacto .contacto-container-titulo h1{
+	font-size: 60px;
+	font-weight:bold;
+	margin-bottom: 50px;
+}
+main #contacto .contacto-container{
+	display: flex;
+}
+main #contacto .contacto-container .contacto-container-items{
+	width: 500px;
+}
+main #contacto .contacto-container .contacto-container-items img{
+	width: 50%;
+}
+@media screen and (max-width: 950px) {
+	header .logo,header nav {
+		width:100%;
+		text-align:center; /*Centramos el menu y el logotipo*/
+		line-height:100px;
+	}
+
+	.header2 {
+		height:auto;
+	}
+
+	.header2 .logo,
+	.header2 nav {
+		line-height:50px;
+	}
 }
