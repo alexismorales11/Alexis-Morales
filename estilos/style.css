@@ -78,6 +78,7 @@ main #proyectos{
 main #proyectos .proyectos-container-titulo{
 	width: 70%;
 	background-color: red;
+	border: 3px solid #000;
 	margin: 10px auto;
 	border-radius: 20px;
 	padding: 15px;
@@ -94,7 +95,7 @@ main #proyectos .proyectos-sec{
 main #proyectos .proyectos-container{
 	padding: 15px;
 	margin: 15px;
-	border: 10px solid #000;
+	border: 1px solid #000;
 	border-radius: 20px;
 }
 main #proyectos .proyectos-container img{
@@ -161,7 +162,7 @@ main #contacto{
 }
 main #contacto .contacto-container-titulo{
 	width: 70%;
-	margin: 20px auto 0;
+	margin: 50px auto;
 	padding: 70px 0 50px;
 }
 main #contacto .contacto-container-titulo h1{
@@ -170,13 +171,23 @@ main #contacto .contacto-container-titulo h1{
 	margin-bottom: 50px;
 }
 main #contacto .contacto-container{
-	display: flex;
+	width: 70%;
+	margin: 250px auto 0;
 }
 main #contacto .contacto-container .contacto-container-items{
-	width: 500px;
+	 display: inline-block;
+	 justify-content: center;
+	 margin: 10px;
 }
 main #contacto .contacto-container .contacto-container-items img{
-	width: 50%;
+	width: 70px;
+}
+main #contacto .contacto-email{
+	margin: 10px auto 400px;
+}
+main #contacto .contacto-email a{
+	text-decoration: none;
+	color: #000;
 }
 @media screen and (max-width: 950px) {
 	header .logo,header nav {
@@ -184,13 +195,11 @@ main #contacto .contacto-container .contacto-container-items img{
 		text-align:center; /*Centramos el menu y el logotipo*/
 		line-height:100px;
 	}
-
-	.header2 {
+	header{
 		height:auto;
 	}
-
-	.header2 .logo,
-	.header2 nav {
+	header .logo,
+	header nav {
 		line-height:50px;
 	}
 }
