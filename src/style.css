@@ -6,12 +6,13 @@ header {
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
 	overflow:hidden; /* Eliminamos errores de float */
 	background:#000;
-
+	position: fixed;
+	z-index: 10;
 }
-.container {
+header .container {
 	width:90%; /* Establecemos que el ancho sera del 90% */
 	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-	margin:auto; /* Centramos los elementos */
+	margin: auto; /* Centramos los elementos */
 	overflow:hidden; /* Eliminamos errores de float */
 }
 header nav {
@@ -37,17 +38,18 @@ header nav a {
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
 }
+header nav a.icon{
+	color: #000;
+}
 header .container .logo a{
     text-decoration: none;
     color: #fff;
 }
 
-header nav a:hover {
-	background:#686767;
-	border-radius:50px;
-}
+
 main {
 	width: 100%;
+	margin-top: 100px;
 	position: absolute;
 }
 main #home{
@@ -73,13 +75,13 @@ main #proyectos{
 	width: 70%;
 	text-align: center;
 	margin: 0 auto;
-	padding: 10px 0 0;
+	padding-top: 100px;
 }
 main #proyectos .proyectos-container-titulo{
 	width: 70%;
 	background-color: red;
 	border: 3px solid #000;
-	margin: 10px auto;
+	margin: 10px auto 75px;
 	border-radius: 20px;
 	padding: 15px;
 }
@@ -116,6 +118,7 @@ main #biografia{
 	width: 70%;
 	margin:0 auto;
 	text-align: center;
+	padding-top: 20px;
 }
 main #biografia .biografia-container-titulo{
 	width: 70%;
@@ -159,6 +162,7 @@ main #contacto{
 	width: 70%;
 	margin:0 auto;
 	text-align: center;
+	padding-top: 20px;
 }
 main #contacto .contacto-container-titulo{
 	width: 70%;
@@ -183,23 +187,169 @@ main #contacto .contacto-container .contacto-container-items img{
 	width: 70px;
 }
 main #contacto .contacto-email{
-	margin: 10px auto 400px;
+	margin: 10px auto 300px;
 }
 main #contacto .contacto-email a{
 	text-decoration: none;
 	color: #000;
 }
-@media screen and (max-width: 950px) {
-	header .logo,header nav {
-		width:100%;
-		text-align:center; /*Centramos el menu y el logotipo*/
-		line-height:100px;
+
+@media (max-width: 1024px) {
+	main #home .home-descripcion {
+		padding: 40px 0;
+	}
+	main #proyectos .proyectos-container-titulo {
+		margin: 10px auto 5px;
+	}
+	main #proyectos {
+		padding-top: 50px;
+	}
+	main #proyectos .proyectos-container-titulo {
+		margin: 10px auto 25px;
+	}
+}
+
+@media (max-width: 1100px){
+	header .logo {
+		color:#f2f2f2;
+		font-size:40px;
+	}
+}
+
+@media screen and (max-width: 1003px) {
+	.topnav a:not(:last-child) {
+	display: none;
+	}
+	.topnav a.icon {
+	  float: right;
+	  display: block;
+	  margin-top: 28px;
+	  color: #fff;
+	}
+}
+  
+@media screen and (max-width: 1003px) {
+	.topnav.responsive {
+	position: relative;
+	}
+	.topnav.responsive .icon {
+	  position: fixed;
+	  right: 0;
+	  top: 0;
+	}
+	.topnav.responsive a {
+	  float: none;
+	  display: inline-block;
+	  text-align: left;
 	}
 	header{
-		height:auto;
+		background-color: rgba(0, 0, 0, 85%);
 	}
-	header .logo,
-	header nav {
-		line-height:50px;
+	header .container {
+		width: 70%;
+		max-width: 1000px;
+		margin: auto;
+		overflow: hidden;
+	}
+  }
+
+@media (max-width: 803px){
+	header .logo {
+		color:#f2f2f2;
+		font-size:40px;
+	}
+	header nav a {
+		font-size: 18px;
+	}
+	main #proyectos {
+		width: 85%;
+	}
+	main #biografia {
+		width: 85%;
+	}
+	main #contacto {
+		width: 95%;
+	}
+}
+
+@media (max-width: 650px){
+	header .logo {
+		font-size: 25px;
+		line-height: 70px;
+	}
+	header .container {
+		width: 80%;
+	}
+	.topnav.responsive {
+		display: grid;
+	}
+	.topnav.responsive a {
+		margin-top: 25px;
+	}
+	main {
+		margin-top: 69px;
+	}
+	main #home .home-descripcion-container {
+		width: 90%;
+	}
+	main #home .home-descripcion {
+		padding: 50px 0;
+	}
+	main #home .home-descripcion h1 {
+		font-size: 15px;
+	}
+	main #proyectos {
+		width: 95%;
+		padding-top: 0;
+	}
+	main #proyectos .proyectos-container-titulo {
+		margin: 10px auto;
+	}
+	main #proyectos .proyectos-titulo {
+		font-size: 20px;
+	}
+	main #proyectos .proyectos-sec {
+		 display: block;
+	}
+	.topnav a.icon {
+		margin-top: 15px;
+	}
+	main #biografia {
+		padding: 50px 0 0 0;
+	}
+	main #biografia .biografia-container-titulo {
+		 width: 100%;
+		 margin-bottom: 20px; 
+		 padding: 0;
+	}
+	main #biografia .biografia-titulo {
+		font-size: 35px;
+		margin-bottom: 50px;
+	}
+	main #biografia div img {
+		width: 200px;
+		height: 200px;
+	}
+	main #biografia .biografia-memes_descripcion {
+		margin: auto 5%;
+	}
+	main #biografia .biografia-memes_descripcion p {
+		font-size: 15px;
+	}
+	main #contacto .contacto-container-titulo {
+		width: 90%;
+		margin: 10px auto;
+		padding: 50px 0 0 0 ;
+	}
+	main #contacto .contacto-container-titulo h1 {
+		font-size: 40px;
+	}
+	main #contacto .contacto-container {
+		width: 100%;
+		margin: 125px auto 0;
+	}
+	main #contacto .contacto-container .contacto-container-items img {
+		width: 60px;
+		margin: 10px;
 	}
 }

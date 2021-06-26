@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wi12dth=device-width, initial-scale=1.0">
     <meta name="author" content="alemorales11">
     <meta name="description" content="Hello, I am a web developer and I like to share knowledge">
     <title>alemorales11</title>
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./src/style.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-			<div class="logo"><a target="_blank" href="https://www.instagram.com/alexis_morales_11/"> Alexis Morales</a></div>
-			<nav>
-				<a href="#home">Home</a>
-                <a href="#proyectos">Proyectos</a>
-				<a href="#biografia">Biografia</a>
-				<a href="#contacto">Contacto</a>
+			<div class="logo">
+                <a href="/">Alexis Morales</a>
+            </div>
+			<nav class="topnav" id="myTopnav">
+				<a href="http://www.twitter.com/ale_morales_11" onclick="myFunction()">@ale_morales_11</a>
+                <a href="#proyectos" onclick="myFunction()">Proyectos</a>
+				<a href="#biografia" onclick="myFunction()">Biografia</a>
+				<a href="#contacto" onclick="myFunction()">Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars">MAS</i>
+                  </a>
 			</nav>
 		</div>
     </header>
@@ -80,7 +85,7 @@
             <div class="biografia-memes_descripcion">
                 <p><a target="_blank" href="https://twitter.com/ale_morales_11">Selvin Alexis Soc Morales </a>nació el 02 de diciembre del año 2000 en un pueblito llamado Barberena en Guatemala, Santa Rosa. Ama escribir codigo y solucionar problemas a través de software.</p>
                 <p>Actualmente es estudiante de ingeniería de sistemas en la Universidad Mariano Gálvez de Guatemala.</p>
-                <p>También es estudiante de la comunidad más grande de educación en línea latinoamericana <a target="_blank" href="https://platzi.com">(Platzi).</a></p>
+                <p>También es estudiante de la comunidad más grande de educación en línea latinoamericana llamada <a target="_blank" href="https://platzi.com">Platzi.</a></p>
             </div>
         </section>
 
@@ -119,6 +124,8 @@
         </section>
 
     </main>
+    <script src="./src/menu.js">
+        </script>
 </body>
 </html>
 
