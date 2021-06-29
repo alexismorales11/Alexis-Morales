@@ -1,2 +1,2 @@
 # Alexis-Morales
-Hola, soy Alexis Morales, encontraras mas información sobre mi en mi blog - portafolio
+Hola, soy Alexis Morales, este es mi sitio web hecho con html, JavaScript y diseñado con css.
