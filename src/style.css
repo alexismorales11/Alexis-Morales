@@ -63,11 +63,11 @@ main #home .home-descripcion{
 	text-align: center;
 }
 main #home .home-descripcion-container{
-	width: 50%;
+	width: 35%;
 	margin: auto;
 }
 main #home .home-descripcion h1{
-	font-size: 40px;
+	font-size: 20px;
 	font-family: monospace;
 }	
 
@@ -193,6 +193,15 @@ main #contacto .contacto-email a{
 	text-decoration: none;
 	color: #000;
 }
+@media (max-width: 1100px){
+	header .logo {
+		color:#f2f2f2;
+		font-size:40px;
+	}
+	main #home .home-descripcion h1 {
+		font-size: 20px;
+	}
+}
 
 @media (max-width: 1024px) {
 	main #home .home-descripcion {
@@ -209,12 +218,6 @@ main #contacto .contacto-email a{
 	}
 }
 
-@media (max-width: 1100px){
-	header .logo {
-		color:#f2f2f2;
-		font-size:40px;
-	}
-}
 
 @media screen and (max-width: 1003px) {
 	.topnav a:not(:last-child) {
@@ -251,6 +254,9 @@ main #contacto .contacto-email a{
 		margin: auto;
 		overflow: hidden;
 	}
+	main #home .home-descripcion h1 {
+		font-size: 18px;
+	}
   }
 
 @media (max-width: 803px){
@@ -269,6 +275,9 @@ main #contacto .contacto-email a{
 	}
 	main #contacto {
 		width: 95%;
+	}
+	main #home .home-descripcion h1 {
+		font-size: 15px;
 	}
 }
 
@@ -290,13 +299,13 @@ main #contacto .contacto-email a{
 		margin-top: 69px;
 	}
 	main #home .home-descripcion-container {
-		width: 90%;
+		width: 70%;
 	}
 	main #home .home-descripcion {
 		padding: 50px 0;
 	}
 	main #home .home-descripcion h1 {
-		font-size: 15px;
+		font-size: 12px;
 	}
 	main #proyectos {
 		width: 95%;
