@@ -138,7 +138,7 @@ main #biografia .biografia-foto_perfil{
 }
 main #biografia div img {
 	width: 300px;
-	height: 300px;
+	height: 400px;
 	border: 1px solid rgb(185, 177, 177);
 	border-radius: 50%;
 }
@@ -337,7 +337,7 @@ main #contacto .contacto-email a{
 	}
 	main #biografia div img {
 		width: 200px;
-		height: 200px;
+		height: 300px;
 	}
 	main #biografia .biografia-memes_descripcion {
 		margin: auto 5%;
