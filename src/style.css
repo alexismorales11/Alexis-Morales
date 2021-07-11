@@ -21,7 +21,7 @@ header nav {
 }
 header .logo {
 	color:#f2f2f2;
-	font-size:50px;
+	font-size:35px;
 	line-height:100px;
 	float:left;
 	font-weight:bold;
@@ -30,9 +30,9 @@ header nav a {
 	display:inline-block;
 	color:#fff;
 	text-decoration:none;
-	padding:10px 20px;
+	padding:10px 13px;
 	line-height:normal;
-	font-size:20px;
+	font-size:19px;
 	font-weight:bold;
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
@@ -45,7 +45,6 @@ header .container .logo a{
     text-decoration: none;
     color: #fff;
 }
-
 
 main {
 	width: 100%;
@@ -66,8 +65,8 @@ main #home .home-descripcion-container{
 	width: 35%;
 	margin: auto;
 }
-main #home .home-descripcion h1{
-	font-size: 20px;
+main #home .home-descripcion p{
+	font-size: 25px;
 }	
 
 main #proyectos{
@@ -88,7 +87,6 @@ main #proyectos .proyectos-titulo{
 	font-weight:bold;
 	font-size: 50px;
 }
-
 main #proyectos .proyectos-sec{
 	display: flex;
 	justify-content: center;
@@ -157,6 +155,40 @@ main #biografia a{
 	color: #000;
 }
 
+main #conocimientos{
+	width: 100%;
+	margin:0 auto;
+	text-align: center;
+	padding-top: 20px;
+	padding: auto 15%;
+}
+main #conocimientos .conocimientos-container-titulo{
+	width: 70%;
+	margin: 50px auto;
+	padding: 70px 0 0;
+}
+main #conocimientos .conocimientos-container-titulo h1{
+	font-size: 60px;
+	font-weight:bold;
+}
+main #conocimientos .conocimientos-container{
+	width: 70%;
+	margin: 75px auto 0;
+}
+main #conocimientos .conocimientos-container .conocimientos-container-subTitulos{
+	margin: 35px 0;
+}
+main #conocimientos .conocimientos-container .conocimientos-container-items{
+	 display: inline-block;
+	 justify-content: center;
+	 margin: 10px;
+}
+main #conocimientos .conocimientos-container .conocimientos-container-items img{
+	width: 70px;
+}
+
+
+
 main #contacto{
 	width: 70%;
 	margin:0 auto;
@@ -195,12 +227,13 @@ main #contacto .contacto-email a{
 @media (max-width: 1100px){
 	header .logo {
 		color:#f2f2f2;
-		font-size:40px;
+		font-size:30px;
 	}
-	main #home .home-descripcion h1 {
+	main #home .home-descripcion p {
 		font-size: 20px;
 	}
 }
+
 
 @media (max-width: 1024px) {
 	main #home .home-descripcion {
@@ -216,7 +249,6 @@ main #contacto .contacto-email a{
 		margin: 10px auto 25px;
 	}
 }
-
 
 @media screen and (max-width: 1003px) {
 	.topnav a:not(:last-child) {
@@ -253,9 +285,9 @@ main #contacto .contacto-email a{
 		margin: auto;
 		overflow: hidden;
 	}
-	main #home .home-descripcion h1 {
+/* 	main #home .home-descripcion p {
 		font-size: 18px;
-	}
+	} */
   }
 
 @media (max-width: 803px){
@@ -275,9 +307,9 @@ main #contacto .contacto-email a{
 	main #contacto {
 		width: 95%;
 	}
-	main #home .home-descripcion h1 {
+/* 	main #home .home-descripcion p {
 		font-size: 15px;
-	}
+	} */
 }
 
 @media (max-width: 650px){
@@ -303,9 +335,9 @@ main #contacto .contacto-email a{
 	main #home .home-descripcion {
 		padding: 50px 0;
 	}
-	main #home .home-descripcion h1 {
+/* 	main #home .home-descripcion p {
 		font-size: 12px;
-	}
+	} */
 	main #proyectos {
 		width: 95%;
 		padding-top: 0;
@@ -348,6 +380,15 @@ main #contacto .contacto-email a{
 		width: 90%;
 		margin: 10px auto;
 		padding: 50px 0 0 0 ;
+	}
+	main #conocimientos .conocimientos-container {
+		width: 95%;
+	}
+	main #conocimientos .conocimientos-container-titulo h1 {
+		font-size: 35px;
+	}
+	main #conocimientos .conocimientos-container-titulo{
+		width: 85%;
 	}
 	main #contacto .contacto-container-titulo h1 {
 		font-size: 40px;
