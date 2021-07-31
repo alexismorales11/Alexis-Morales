@@ -133,11 +133,11 @@ main #biografia .biografia-foto_perfil{
 	align-items: center;
 	margin-bottom: 50px;
 }
-main #biografia div img {
+main #biografia div img{
 	width: 300px;
-	height: 400px;
-	border: 1px solid rgb(185, 177, 177);
-	border-radius: 50%;
+	height: 380px;
+	border: 5px solid rgb(0, 0, 0);
+	border-radius: 5%;
 }
 main #biografia .biografia-memes_descripcion{
 	margin: auto 20%;
@@ -224,6 +224,7 @@ main #contacto .contacto-email a{
 	text-decoration: none;
 	color: #000;
 }
+
 @media (max-width: 1100px){
 	header .logo {
 		color:#f2f2f2;
@@ -368,7 +369,7 @@ main #contacto .contacto-email a{
 	}
 	main #biografia div img {
 		width: 200px;
-		height: 300px;
+		height: 280px;
 	}
 	main #biografia .biografia-memes_descripcion {
 		margin: auto 5%;
