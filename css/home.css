@@ -203,7 +203,7 @@ footer,
     margin: 0 auto;
     padding: 85px 0;
     align-items: center;
-    border-top: 1px solid;
+    border-top: 1px solid #20ce88;
 }
 
 .footer_container .container_social_media,
@@ -256,5 +256,9 @@ footer,
     .ccgs_contaimer_description .ccc_card {
         margin-top: 15px;
         width: 100%;
+    }
+
+    .ccgs_contaimer_description {
+        min-height: 800px;
     }
 }
